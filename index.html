@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Shane Louise Abrajano, BSIT student at Bulacan State University.">
+  <title>Shane Louise | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600;1,9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" hidden>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+
+      <a class="brand" href="#home" aria-label="Shane Louise, go to top of page">
+        <span class="brand-icon" aria-hidden="true">
+          <svg class="icon"><use href="#icon-heart"/></svg>
+        </span>
+        <span class="brand-name">Shane Louise<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link active" href="#home" aria-current="page">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Toggle dark mode">
+          <svg class="icon icon-sun"><use href="#icon-sun"/></svg>
+          <svg class="icon icon-moon"><use href="#icon-moon"/></svg>
+          <span class="switch" aria-hidden="true"><span class="knob"></span></span>
+        </button>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section hero" id="home" aria-labelledby="hero-title">
+      <div class="deco" data-reveal="circles" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-hello" data-reveal="left">hello, I'm</p>
+          <h1 id="hero-title" data-reveal="left" data-delay="1">Shane,<span class="hero-tagline">A little about me, beyond the screen.</span></h1>
+
+          <ul class="hero-meta" data-reveal="up" data-delay="2">
+            <li>BSIT Student</li>
+            <li>3rd Year</li>
+            <li>Digital Layouting</li>
+          </ul>
+
+          <p class="hero-bio" data-reveal="up" data-delay="3">I'm from San Ildefonso, Bulacan and currently studying Web and Mobile Application Development at Bulacan State University. I enjoy exploring design, creating layouts, and working on projects that let me be both creative and hands-on.</p>
+
+          <div class="hero-actions" data-reveal="up" data-delay="4">
+            <a class="btn btn-outline" href="#about">
+              <svg class="icon"><use href="#icon-user"/></svg>
+              Get to Know Me
+            </a>
+            <a class="btn btn-primary" href="#projects">
+              View My Projects
+              <svg class="icon"><use href="#icon-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <figure class="polaroid" data-reveal="drop" data-delay="2">
+          <span class="polaroid-tape" aria-hidden="true"></span>
+          <img src="assets/image/profile.jpg" alt="Portrait of Shane Louise Abrajano in a white collared shirt and black blazer">
+          <figcaption class="polaroid-caption">this is me</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section-title" id="about-title" data-reveal="up">About Me</h2>
+        <p class="section-sub" data-reveal="up" data-delay="1">Get to know more</p>
+
+        <div class="about-grid">
+
+          <div class="about-text">
+            <h3 class="pill" data-reveal="left">Personal Information</h3>
+            <ul class="info-list" data-reveal="up" data-delay="1">
+              <li><strong>Full Name</strong>: Shane Louise Santos Abrajano</li>
+              <li><strong>Birthday</strong>: February 7, 2005</li>
+              <li><strong>Favorite Color</strong>: Pink</li>
+            </ul>
+
+            <h3 class="pill" data-reveal="left">Hobbies</h3>
+            <p class="about-paragraph" data-reveal="up" data-delay="1">Beyond school and projects, I enjoy expressing myself through creative hobbies like paper crafts, layout designing, dancing, and watching K-pop content on YouTube. I also love playing Mobile Legends and spending quiet moments with simple things like fries. I'm someone who enjoys learning through experience, trying new ideas, and finding creative ways to make things feel more personal and meaningful.</p>
+
+            <h3 class="pill" data-reveal="left">Strengths</h3>
+            <ul class="info-list" data-reveal="up" data-delay="1">
+              <li><strong>Creative</strong> — I enjoy designing layouts and finding creative ways to present ideas.</li>
+              <li><strong>Willing to learn</strong> — I'm open to learning new things and improving through experience.</li>
+              <li><strong>Detail-oriented</strong> — I pay attention to how things look and how they work.</li>
+              <li><strong>Adaptable</strong> — I can adjust when working on different tasks and projects.</li>
+              <li><strong>Team player</strong> — I'm comfortable working with others and contributing to group projects.</li>
+            </ul>
+          </div>
+
+          <div class="about-side">
+            <img class="about-art" data-reveal="pop" src="assets/image/about-illustration.png" alt="Cute drawing of a laptop showing code, a notebook that says Good Things Ahead, a purple drink, a plant, a phone and a mouse">
+
+            <article class="trivia-card" data-reveal="pop" data-delay="2">
+              <span class="card-tape" aria-hidden="true"></span>
+              <h3 class="trivia-title">Trivia</h3>
+              <p>My name has a little story behind it. “Shane” came from my mom's favorite niece “Shaine”, while “Louise” was inspired by her coworker, Jane Louise. So, my name carries a small connection to two people who were meaningful to my mom. ♡</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section-title" id="projects-title" data-reveal="up">Projects</h2>
+        <p class="section-sub" data-reveal="up" data-delay="1">Things I've made</p>
+
+        <div class="project-grid">
+
+          <article class="project-card" data-reveal="pop" data-delay="1">
+            <img src="assets/image/project-vanguards-delights.png" alt="Screenshot of the Vanguard's Delights e-commerce web app">
+            <h3 class="project-title">Vanguard's Delights</h3>
+            <p class="project-type">E-Commerce Web App</p>
+            <p class="project-desc">An e-commerce web system for browsing products, managing orders, and supporting online transactions.</p>
+            <ul class="tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">PHP</li>
+            </ul>
+            <a class="card-link" href="#" aria-label="View Vanguard's Delights project">
+              View Project
+              <svg class="icon"><use href="#icon-arrow"/></svg>
+            </a>
+          </article>
+
+          <article class="project-card" data-reveal="pop" data-delay="2">
+            <img src="assets/image/project-bulsu-activity-tracker.png" alt="Screenshot of the BulSU Activity Tracker mobile app">
+            <h3 class="project-title">BulSU EduTrack</h3>
+            <p class="project-type">Mobile App Activity</p>
+            <p class="project-desc">A mobile activity-tracking application for adding, monitoring, editing, and completing school activities.</p>
+            <ul class="tags">
+              <li class="tag">Flutter</li>
+              <li class="tag">Dart</li>
+            </ul>
+            <a class="card-link" href="#" aria-label="View BulSU Activity Tracker project">
+              View Project
+              <svg class="icon"><use href="#icon-arrow"/></svg>
+            </a>
+          </article>
+
+          <article class="project-card" data-reveal="pop" data-delay="3">
+            <img src="assets/image/project-webspool.png" alt="Screenshot of the WebSpool printing services web app">
+            <h3 class="project-title">WebSpool</h3>
+            <p class="project-type">Printing Services Web App</p>
+            <p class="project-desc">A printing service system that allows customers to submit orders, select services, schedule pickups, and track order status.</p>
+            <ul class="tags">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">PHP</li>
+            </ul>
+            <a class="card-link" href="#" aria-label="View WebSpool project">
+              View Project
+              <svg class="icon"><use href="#icon-arrow"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="section contact" id="contact">
+    <div class="deco" data-reveal="circles" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+    <div class="container contact-inner">
+      <p class="contact-script" data-reveal="up">Let's Connect!</p>
+      <h2 class="contact-title" data-reveal="up" data-delay="1">Send me a little note</h2>
+      <p class="contact-intro" data-reveal="up" data-delay="2">Have a project in mind? Or just want to say hi?<br>I'd love to hear from you.</p>
+
+      <ul class="contact-list">
+        <li>
+          <a class="contact-btn" data-reveal="up" data-delay="3" href="https://mail.google.com/mail/?view=cm&fs=1&to=abrajanoshanelouise@gmail.com&su=Hello%20Shane" target="_blank" rel="noopener noreferrer">
+            <svg class="icon"><use href="#icon-mail"/></svg>
+            abrajanoshanelouise@gmail.com
+          </a>
+        </li>
+        <li>
+          <a class="contact-btn" data-reveal="up" data-delay="4" href="https://github.com/bulsu-slsabrajano" target="_blank" rel="noopener noreferrer">
+            <svg class="icon"><use href="#icon-github"/></svg>
+            github.com/bulsu-slsabrajano
+          </a>
+        </li>
+        <li>
+          <a class="contact-btn" data-reveal="up" data-delay="5" href="https://www.facebook.com/shanelouise.abrajano020705/" target="_blank" rel="noopener noreferrer">
+            <svg class="icon"><use href="#icon-facebook"/></svg>
+            Shane Louise Abrajano
+          </a>
+        </li>
+      </ul>
+
+      <p class="copyright" data-reveal="up" data-delay="5">&copy; <span id="year">2026</span> Shane Louise. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
